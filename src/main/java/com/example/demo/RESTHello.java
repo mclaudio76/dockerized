@@ -8,7 +8,7 @@ public class RESTHello {
 
 	@GetMapping(path = "/hello")
 	public Greeting helloMe() {
-		return new Greeting("Mauri Claudio");
+		return  Greeting.createGreeting("This is another test");
 	}
-}
+}  
 

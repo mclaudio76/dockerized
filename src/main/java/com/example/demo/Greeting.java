@@ -7,8 +7,13 @@ public class Greeting {
 		
 	}
 	
-	public Greeting(String s) {
+	
+	private Greeting(String s) {
 		this.message = s;
+	}
+	
+	public static Greeting createGreeting(String s) {
+		return new Greeting(s);
 	}
 	
 }
